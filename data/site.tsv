@@ -1,0 +1,11 @@
+#key	value
+name	PCI Clocks
+byline	Precision Clocks &amp; Industries
+safeName	pciclocks
+footer-message	[define in site.tsv]
+siteMenuName	About PCI
+scaffold	sitemap
+sections	catalogue
+local-url	http://localhost/sites/pciclocks/
+live-url	https://pciclocks.amadeusweb.site/
+year	2014
