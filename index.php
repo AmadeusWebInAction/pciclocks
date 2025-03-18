@@ -8,13 +8,21 @@ include_once '../../awe/core/framework/1-entry.php';
 variables([
 	'use-site-static' => true,
 	'not-a-network' => true,
-	'theme1' => 'canvas',
-	'sub-theme1' => 'flip',
+	'theme' => 'canvas',
+	'sub-theme' => 'flip',
 	'social' => [
 		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/company/pciclocks/', 'name' => 'PCI Clocks' ],
 		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/subash-pciclocks/', 'name' => 'Founder Subash' ],
 		[ 'type' => 'youtube', 'url' => 'https://www.youtube.com/@pciclocks', 'name' => 'PCI Clocks' ],
 	]
 ]);
+
+function enrichThemeVars($vars, $what) {
+	if ($what == 'header') {
+		$vars['optional-slider'] = getSnippet('page-title');
+		$vars['header-align'] = ' float-end';
+	}
+	return $vars;
+}
 
 runFrameworkFile('site');
