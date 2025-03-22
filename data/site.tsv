@@ -2,10 +2,10 @@
 name	PCI Clocks
 byline	Precision Clocks &amp; Industries
 safeName	pciclocks
-footer-message	[define in site.tsv]
+footer-message	We'll make dreams happen!!
 siteMenuName	About PCI
 scaffold	sitemap
-sections	catalogue
+sections	catalogue, services
 local-url	http://localhost/sites/pciclocks/
 live-url	https://pciclocks.amadeusweb.site/
-year	2014
+year	2016

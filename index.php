@@ -6,6 +6,11 @@ define('SITEPATH', __DIR__);
 include_once '../../awe/core/framework/1-entry.php';
 
 variables([
+	'phone' => '+91-9853860155',
+	'email' => 'precisionclocks@gmail.com',
+	'whatsapp' => '919940226317',
+
+	'sections-have-files' => true,
 	'use-site-static' => true,
 	'not-a-network' => true,
 	'theme' => 'canvas',
