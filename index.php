@@ -26,7 +26,12 @@ variables([
 function enrichThemeVars($vars, $what) {
 	if ($what == 'header') {
 		$vars['optional-slider'] = getSnippet('page-title');
-		$vars['header-align'] = ' float-end';
+
+		$vars['breadcrumbs'] = getBreadcrumbs([
+			'%url%' => variable('name') . ' (Home)',
+			'%url%catalogue/' => 'Catalogue',
+			'%url%make-an-enquiry/' => 'Make an Enquiry',
+		]);
 	}
 	return $vars;
 }
