@@ -13,6 +13,7 @@ variables([
 	'not-a-network' => true,
 	'theme' => 'canvas',
 	'sub-theme' => 'flip',
+	'footer-variation' => '-single-widget',
 	'no-page-menu' => true,
 	'address-url' => $addressLink = 'https://maps.app.goo.gl/zer8pJdfcKxxQByU9',
 	'social' => [
@@ -23,8 +24,19 @@ variables([
 	]
 ]);
 
+function site_before_render() {
+	$node = variable('node');
+	if ($node == 'index') setSubTheme('stunning');
+}
+
+
 function enrichThemeVars($vars, $what) {
 	if ($what == 'header') {
+		if (variable('node') == 'index') {
+			$vars['optional-slider'] = getSnippet('home-slider');
+			return $vars;
+		}
+	
 		$vars['optional-slider'] = getSnippet('page-title');
 
 		$vars['breadcrumbs'] = getBreadcrumbs([
