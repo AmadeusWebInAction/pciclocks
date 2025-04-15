@@ -23,12 +23,21 @@ variables([
 		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/subash-pciclocks/', 'name' => 'Dehury' ],
 //		[ 'type' => 'youtube', 'url' => 'https://www.youtube.com/@pciclocks', 'name' => 'PCI Clocks' ],
 		[ 'type' => 'fa fa-home text-bg-warning', 'url' => $addressLink, 'name' => 'Workshop' ],
-	]
+	],
+	'defaultSeoDescription' => 'PCI Clocks have been manufacturing excellent pillar, tower and outdoor clocks since a decade.',
+	'defaultSeoKeywords' => 'tower clocks,outdoor clocks,pillar clocks,clocks in india,custom design clocks'
 ]);
 
 function site_before_render() {
 	$node = variable('node');
 	if ($node == 'index') setSubTheme('stunning');
+	if ($node == 'index') {
+		variables([
+			'description' => variable('defaultSeoDescription'),
+			'keywords' => variable('defaultSeoKeywords'),
+			'seo-handled' => true,
+		]);
+	}
 }
 
 
