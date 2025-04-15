@@ -10,14 +10,14 @@ $blocks = [
 			getTeamItem('Imran', 'Webmaster & Content', 'https://www.linkedin.com/in/imran-ali-namazi/'),
 		]
 	],
+	'skills' => 'code-snippet',
 	'works' => [
 		'start' => ['introduction' => 'With a commitment to craftsmanship, we deliver reliable and elegant timepieces for communities and institutions worldwide.'],
 		'end' => [],
 		'items' => [
-			getWorkItem('Type 1'),
-			getWorkItem('Type 2'),
-			getWorkItem('Type 3'),
-			getWorkItem('Type 4'),
+			getWorkItem('Tower Clocks'),
+			getWorkItem('Pillar Clocks'),
+			getWorkItem('Floral Clocks'),
 		]
 	],
 	
@@ -25,7 +25,7 @@ $blocks = [
 
 foreach ($blocks as $name => $item) {
 	if (is_string($item)) {
-		echo getSnippet($name);
+		echo $item == 'code-snippet' ? getCodeSnippet($name) : getSnippet($name);
 		continue;
 	}
 

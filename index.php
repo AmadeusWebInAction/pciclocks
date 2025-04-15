@@ -8,6 +8,8 @@ include_once '../../awe/core/framework/1-entry.php';
 addStyle('site');
 
 variables([
+	'google-analytics' => 'G-NQ65KWGP4F',
+	'ChatraID' => 'qZZNzKEy2t388Fcvf',
 	'sections-have-files' => true,
 	'use-site-static' => true,
 	'not-a-network' => true,
@@ -36,8 +38,17 @@ function enrichThemeVars($vars, $what) {
 			$vars['optional-slider'] = getSnippet('home-slider');
 			return $vars;
 		}
-	
-		$vars['optional-slider'] = getSnippet('page-title');
+
+		$file = 'big-ben';
+		$node = variable('node');
+
+		if (in_array($node, ['tower-clocks']))
+			$file = 'towerdial';
+
+		$slider = getSnippet('page-title');
+		$slider = replaceItems($slider, ['filename' => $file], '%');
+
+		$vars['optional-slider'] = $slider;
 
 		$vars['breadcrumbs'] = getBreadcrumbs([
 			'%url%' => variable('name') . ' (Home)',
