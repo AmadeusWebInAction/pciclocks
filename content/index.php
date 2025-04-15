@@ -13,7 +13,7 @@ $blocks = [
 	'skills' => 'code-snippet',
 	'works' => [
 		'start' => ['introduction' => 'With a commitment to craftsmanship, we deliver reliable and elegant timepieces for communities and institutions worldwide.'],
-		'end' => [],
+		'end' => ['morelink' => pageUrl('catalogue')],
 		'items' => [
 			getWorkItem('Tower Clocks'),
 			getWorkItem('Pillar Clocks'),
@@ -25,7 +25,7 @@ $blocks = [
 
 foreach ($blocks as $name => $item) {
 	if (is_string($item)) {
-		echo $item == 'code-snippet' ? getCodeSnippet($name) : getSnippet($name);
+		if ($item == 'code-snippet') getCodeSnippet($name); else echo getSnippet($name);
 		continue;
 	}
 
@@ -36,7 +36,7 @@ foreach ($blocks as $name => $item) {
 		echo replaceItems($block['item'], $vars, '%');
 
 
-	echo replaceItems($block['end'], $item['start'], '%');
+	echo replaceItems($block['end'], $item['end'], '%');
 }
 
 function getTeamItem($name, $designation, $linkedin) {

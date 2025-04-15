@@ -17,6 +17,7 @@ variables([
 	'sub-theme' => 'flip',
 	'footer-variation' => '-single-widget',
 	'no-page-menu' => true,
+	'dont-show-current-menu' => true,
 	'address-url' => $addressLink = 'https://maps.app.goo.gl/zer8pJdfcKxxQByU9',
 	'social' => [
 //		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/company/pciclocks/', 'name' => 'PCI Clocks' ],
