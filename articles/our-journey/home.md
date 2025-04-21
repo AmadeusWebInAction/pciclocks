@@ -1,9 +1,10 @@
-From Distant Shores to the Heart of Odisha: The Story of Precision Clocks and Industries
+**From Distant Shores to the Heart of Odisha: The Story of Precision Clocks and Industries**
 
 ## Initial Journeying
 
 My journey began not amidst the familiar landscapes of Odisha, but across distant shores where I spent five formative years working abroad. This experience broadened my horizons and instilled in me a drive to create and build something of my own.
 
+<!--more-->
 
 Returning to India, my entrepreneurial spirit initially led me to Bangalore, a hub of technological innovation. There, I joined forces with four individuals to develop a cutting-edge GPS/GSM/GPRS vehicle tracking system. For about a year, my focus was entirely on product development, pouring my expertise and energy into creating a robust and effective solution.
 

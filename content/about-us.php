@@ -1,21 +1,22 @@
 <?php
 /*
-GET QUOTAIION
-	i> NEED HELP CALL 
-	i> WHATSAPP
+1 - https://canvastemplate.com/rs-demo-premium-food-carousel.html
+	images shortlisted
+2 - 
+
 */
 $blocks = [
-	'home-about' => 'snippet',
-	'works' => [
-		'start' => ['introduction' => 'With a commitment to craftsmanship, we deliver reliable and elegant timepieces for communities and institutions worldwide.'],
-		'end' => ['morelink' => pageUrl('catalogue')],
+	'about-intro' => 'snippet',
+	'team' => [
+		'start' => [],
+		'end' => [],
 		'items' => [
-			getWorkItem('Tower Clocks'),
-			getWorkItem('Pillar Clocks'),
-			getWorkItem('Floral Clocks'),
+			getTeamItem('Subash', 'Founder & Chief Engineer', 'https://www.linkedin.com/in/subash-pciclocks/'),
+			getTeamItem('Sabya', 'Promo and Social Media', 'https://www.linkedin.com/in/sabyasachi-dehury-578a29235/'),
+			getTeamItem('Imran', 'Webmaster & Content', 'https://www.linkedin.com/in/imran-ali-namazi/'),
 		]
 	],
-	
+	'skills' => 'code-snippet',
 ];
 
 foreach ($blocks as $name => $item) {
@@ -33,10 +34,6 @@ foreach ($blocks as $name => $item) {
 
 	echo replaceItems($block['end'], $item['end'], '%');
 }
-
-contentBox('journey', 'container');
-renderExcerpt(SITEPATH . '/articles/our-journey/home.md', pageUrl('our-journey'));
-contentBox('end');
 
 function getTeamItem($name, $designation, $linkedin) {
 	$assets = getHtmlVariable('assets');

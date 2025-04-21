@@ -25,11 +25,12 @@ variables([
 //		[ 'type' => 'youtube', 'url' => 'https://www.youtube.com/@pciclocks', 'name' => 'PCI Clocks' ],
 		[ 'type' => 'fa fa-home text-bg-warning', 'url' => $addressLink, 'name' => 'Workshop' ],
 	],
-	'defaultSeoDescription' => 'PCI Clocks have been manufacturing excellent pillar, tower and outdoor clocks since a decade.',
+	'defaultSeoDescription' => 'Best Manufacturer under MSME | Tower Clocks GPS synchronized.',
 	'defaultSeoKeywords' => 'tower clocks,outdoor clocks,pillar clocks,clocks in india,custom design clocks'
 ]);
 
 function site_before_render() {
+	variable('og:image', fileUrl('assets/pciclocks-opengraph.jpg'));
 	$node = variable('node');
 	if ($node == 'index') setSubTheme('stunning');
 	if ($node == 'index') {
@@ -41,11 +42,17 @@ function site_before_render() {
 	}
 }
 
+function after_footer_assets() {
+	$node = variable('node');
+	if ($node == 'index') {
+		echo getThemeSnippet('rs-plugin-footer');
+	}
+}
 
 function enrichThemeVars($vars, $what) {
 	if ($what == 'header') {
 		if (variable('node') == 'index') {
-			$vars['optional-slider'] = getSnippet('home-slider');
+			$vars['optional-slider'] = getCodeSnippet('home-slider');
 			return $vars;
 		}
 
@@ -61,7 +68,7 @@ function enrichThemeVars($vars, $what) {
 		$vars['optional-slider'] = $slider;
 
 		$vars['breadcrumbs'] = getBreadcrumbs([
-			'%url%' => variable('name') . ' (Home)',
+			'%url%' => 'Home',
 			'%url%catalogue/' => 'Catalogue',
 			'%url%make-an-enquiry/' => 'Make an Enquiry',
 		]);
