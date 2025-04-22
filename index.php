@@ -5,8 +5,6 @@ ini_set('display_errors', '1');
 define('SITEPATH', __DIR__);
 include_once '../../awe/core/framework/1-entry.php';
 
-addStyle('site');
-
 variables([
 	'google-analytics' => 'G-NQ65KWGP4F',
 	'ChatraID' => 'qZZNzKEy2t388Fcvf',
@@ -17,6 +15,7 @@ variables([
 	'sub-theme' => 'flip',
 	'footer-variation' => '-single-widget',
 	'no-page-menu' => true,
+	'link-to-site-home' => true,
 	'dont-show-current-menu' => true,
 	'address-url' => $addressLink = 'https://maps.app.goo.gl/zer8pJdfcKxxQByU9',
 	'social' => [
@@ -30,6 +29,8 @@ variables([
 ]);
 
 function site_before_render() {
+	addStyle('site');
+
 	variable('og:image', fileUrl('assets/pciclocks-opengraph.jpg'));
 	$node = variable('node');
 	if ($node == 'index') setSubTheme('stunning');

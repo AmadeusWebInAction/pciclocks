@@ -34,6 +34,10 @@ foreach ($blocks as $name => $item) {
 	echo replaceItems($block['end'], $item['end'], '%');
 }
 
+contentBox('engineering', 'container');
+renderExcerpt(SITEPATH . '/articles/engineering/home.md', pageUrl('engineering'));
+contentBox('end');
+
 contentBox('journey', 'container');
 renderExcerpt(SITEPATH . '/articles/our-journey/home.md', pageUrl('our-journey'));
 contentBox('end');

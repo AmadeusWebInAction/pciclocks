@@ -2,7 +2,7 @@
 $items = [
 	[
 		'sno' => '1',
-		'title' => 'Masterful Design Aesthetics',
+		'title' => 'Outdoor Tower Clocks',
 		'image' => 'assets/home/1.jpg',
 		'thumbnail' => 'assets/home/thumbnails/1.jpg',
 		'detail' => 'Know More',
@@ -25,7 +25,7 @@ Cost range- from Rs 60,000/- onwards.<br>
 
 	[
 		'sno' => '2',
-		'title' => 'Masterful Design Aesthetics',
+		'title' => 'Pillar Clocks',
 		'image' => 'assets/home/2.jpg',
 		'thumbnail' => 'assets/home/thumbnails/2.jpg',
 		'detail' => 'Know More',
@@ -47,7 +47,7 @@ Cost range- from Rs 1,20,000/- onwards.<br>
 
 	[
 		'sno' => '3',
-		'title' => 'Masterful Design Aesthetics',
+		'title' => 'Floral - Botanical Garden Clocks',
 		'image' => 'assets/home/3.jpg',
 		'thumbnail' => 'assets/home/thumbnails/3.jpg',
 		'detail' => 'Know More',
@@ -69,7 +69,7 @@ Cost range- from Rs 60,000/- onwards.<br>
 
 	[
 		'sno' => '4',
-		'title' => 'Masterful Design Aesthetics',
+		'title' => 'FRP Tower Structure with Clocks',
 		'image' => 'assets/home/4.jpg',
 		'thumbnail' => 'assets/home/thumbnails/4.jpg',
 		'detail' => 'Know More',
@@ -91,7 +91,7 @@ Cost range- from Rs 30,00,000/- onwards.<br>
 
 	[
 		'sno' => '5',
-		'title' => 'Masterful Design Aesthetics',
+		'title' => 'Antique Clocks',
 		'image' => 'assets/home/5.jpg',
 		'thumbnail' => 'assets/home/thumbnails/5.jpg',
 		'detail' => 'Know More',
@@ -114,7 +114,7 @@ Cost range- from Rs 60,000/- onwards.<br>
 
 	[
 		'sno' => '6',
-		'title' => 'Masterful Design Aesthetics',
+		'title' => 'Analog Tower Clocks',
 		'image' => 'assets/home/6.jpg',
 		'thumbnail' => 'assets/home/thumbnails/6.jpg',
 		'detail' => 'Know More',

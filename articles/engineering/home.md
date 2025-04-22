@@ -1,4 +1,8 @@
+## Top Notch Engineering
+
 At Precision Clocks & Industries, our engineering focus is on delivering exceptional accuracy and durability in every clock component we manufacture and fabricate. We provide comprehensive solutions for clock makers and industries demanding reliable timekeeping, encompassing robust slave movements, intelligent GPS-synchronized controllers, and custom-designed software.
+
+<!--more-->
 
 Our Advanced Engineering Capabilities Include:
 
@@ -7,8 +11,11 @@ Our Advanced Engineering Capabilities Include:
 The core of reliable timekeeping, our slave movements are engineered for longevity and precision. We meticulously manufacture each component using high-quality materials:
 
 Enclosures (304 Grade Stainless Steel): Our slave movement enclosures are constructed from durable 304-grade stainless steel, providing exceptional resistance to corrosion and environmental factors, ensuring long-term protection for the internal mechanisms.
+
 Pinions (Gun Metal & 304 Grade Stainless Steel): We utilize the optimal materials for our pinions, employing both the wear-resistant properties of Gun Metal and the robust strength of 304-grade stainless steel. This ensures efficient power transfer and minimal wear over time.
+
 Gears (Gun Metal & 304 Grade Stainless Steel): Similar to our pinions, our gears are manufactured using a combination of Gun Metal for its excellent bearing properties and 304-grade stainless steel for its strength and resistance to deformation. This material selection guarantees precise meshing and reliable operation.
+
 Base Plates (Gun Metal & 304 Grade Stainless Steel): The foundation of our slave movements is built with precision-machined base plates made from both Gun Metal and 304-grade stainless steel. This ensures the stable and accurate alignment of all movement components.
 
 ---
