@@ -15,6 +15,9 @@ body.no-slider #header:not(.not-dark), body.no-slider #header #header-wrap:not(.
 #header { --cnvs-primary-menu-color: cyan; }
 #header .sub-menu-container { --cnvs-primary-menu-color: rgb(231, 86, 29); }
 
+.menu-item .sub-menu-trigger { color: var(--cnvs-primary-menu-color); }
+.primary-menu-trigger { background-color: var(--cnvs-primary-menu-color); }
+
 .device-up-md { --cnvs-floating-btn-box-width: 700px; }
 
 .social-link { line-height: 40px!important; }

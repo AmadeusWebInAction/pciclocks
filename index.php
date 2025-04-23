@@ -67,7 +67,7 @@ function after_footer_assets() {
 			'delay:9000' => 'delay:2000',
 		]);
 	}
-	echo getThemeSnippet('floating-button');
+	//echo getThemeSnippet('floating-button');
 }
 
 function enrichThemeVars($vars, $what) {
