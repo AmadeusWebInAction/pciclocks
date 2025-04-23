@@ -16,3 +16,6 @@ body.no-slider #header:not(.not-dark), body.no-slider #header #header-wrap:not(.
 #header .sub-menu-container { --cnvs-primary-menu-color: rgb(231, 86, 29); }
 
 .device-up-md { --cnvs-floating-btn-box-width: 700px; }
+
+.social-link { line-height: 40px!important; }
+body:not(.device-down-lg) #footer-social { text-align: left; }

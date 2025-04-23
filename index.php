@@ -13,22 +13,30 @@ variables([
 	'not-a-network' => true,
 	'theme' => 'canvas',
 	'sub-theme' => 'flip',
-	'footer-variation' => '-single-widget',
+	'footer-variation' => '-large-message',
 	'no-page-menu' => true,
 	'link-to-site-home' => true,
 	'dont-show-current-menu' => true,
 	'address-url' => $addressLink = 'https://maps.app.goo.gl/zer8pJdfcKxxQByU9',
-	'social' => [
-//		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/company/pciclocks/', 'name' => 'PCI Clocks' ],
-		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/subash-pciclocks/', 'name' => 'Dehury' ],
-//		[ 'type' => 'youtube', 'url' => 'https://www.youtube.com/@pciclocks', 'name' => 'PCI Clocks' ],
-		[ 'type' => 'icon-2x text-bg-warning uil uil-map-marker', 'url' => $addressLink, 'name' => 'Workshop Location' ],
-	],
 	'defaultSeoDescription' => 'Best Manufacturer under MSME | Tower Clocks GPS synchronized.',
 	'defaultSeoKeywords' => 'tower clocks,outdoor clocks,pillar clocks,clocks in india,custom design clocks'
 ]);
 
+function _set_social() {
+	$text = 'enquiry+to+PCI+Clocks...';
+	variable('social', [
+		[ 'type' => 'whatsapp', 'url' => replaceHtml('%whatsapp%') . $text, 'name' => 'WhatsApp Us' ],
+		[ 'type' => 'text-bg-success bi-telephone-forward', 'url' => 'tel:' . variable('phone'), 'name' => 'Call Us' ],
+		[ 'type' => 'fa-solid text-bg-primary fa-mail-bulk', 'url' => replaceHtml('mailto:%email%?subject=') . $text, 'name' => 'Email Us' ],
+//		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/company/pciclocks/', 'name' => 'PCI Clocks' ],
+		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/subash-pciclocks/', 'name' => 'Dehury' ],
+//		[ 'type' => 'youtube', 'url' => 'https://www.youtube.com/@pciclocks', 'name' => 'PCI Clocks' ],
+		[ 'type' => 'icon-2x text-bg-warning uil uil-map-marker', 'url' => variable('address-url'), 'name' => 'Workshop Location' ],
+	]);
+}
+
 function site_before_render() {
+	_set_social();
 	addStyle('site');
 	runFeature('engage'); //needed for floating button
 
@@ -59,7 +67,7 @@ function after_footer_assets() {
 			'delay:9000' => 'delay:2000',
 		]);
 	}
-	//echo getThemeSnippet('floating-button');
+	echo getThemeSnippet('floating-button');
 }
 
 function enrichThemeVars($vars, $what) {
