@@ -13,6 +13,10 @@ Customization Options:
 
 ---
 
+%media-codesnippet%
+
+---
+
 ## Shape and Design
 
 Beyond materials, the shape of your clock dial is entirely up to you. Whether you require a classic round, a contemporary square, or a unique rectangular design, we can bring your vision to life.

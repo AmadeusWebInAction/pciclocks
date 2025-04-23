@@ -20,6 +20,10 @@ Base Plates (Gun Metal & 304 Grade Stainless Steel): The foundation of our slave
 
 ---
 
+%media-codesnippet%
+
+---
+
 ## 2. Intelligent GPS-Synchronized Clock Controllers:
 
 For applications requiring the highest level of time accuracy, our engineering team designs and assembles advanced clock controllers integrated with GPS technology:

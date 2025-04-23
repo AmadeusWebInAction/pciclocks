@@ -22,7 +22,8 @@ $items = [
 
 $block = getThemeBlock('skills');
 
-echo replaceItems($block['start'], ['block-title' => 'We are renowned for'], '%');
+contentBox('skills', 'container');
+echo replaceItems($block['start'], ['block-title' => 'We are Renowned for'], '%');
 
 $base = variable('node') . '/' . variable('page_parameter1') . '/';
 
@@ -32,3 +33,4 @@ foreach ($items as $item) {
 }
 
 echo $block['end'];
+contentBox('end');

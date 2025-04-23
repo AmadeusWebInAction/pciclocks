@@ -22,7 +22,7 @@ variables([
 //		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/company/pciclocks/', 'name' => 'PCI Clocks' ],
 		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/subash-pciclocks/', 'name' => 'Dehury' ],
 //		[ 'type' => 'youtube', 'url' => 'https://www.youtube.com/@pciclocks', 'name' => 'PCI Clocks' ],
-		[ 'type' => 'fa fa-home text-bg-warning', 'url' => $addressLink, 'name' => 'Workshop' ],
+		[ 'type' => 'icon-2x text-bg-warning uil uil-map-marker', 'url' => $addressLink, 'name' => 'Workshop Location' ],
 	],
 	'defaultSeoDescription' => 'Best Manufacturer under MSME | Tower Clocks GPS synchronized.',
 	'defaultSeoKeywords' => 'tower clocks,outdoor clocks,pillar clocks,clocks in india,custom design clocks'
@@ -44,6 +44,13 @@ function site_before_render() {
 	}
 }
 
+function after_file() {
+	contentBox('enquiry', 'container after-content text-center');
+	h2('Make an Enquiry');
+	echo '<a class="btn btn-primary" href="https://forms.gle/aQ2RfWVAfAN2t6XK7" target="_blank">Receive Quotation within 24 hours</a>';
+	contentBox('end');
+}
+
 function after_footer_assets() {
 	$node = variable('node');
 	if ($node == 'index') {
@@ -59,10 +66,6 @@ function enrichThemeVars($vars, $what) {
 		}
 
 		$file = 'big-ben';
-		$node = variable('node');
-
-		if (in_array($node, ['tower-clocks']))
-			$file = 'towerdial';
 
 		$slider = getSnippet('page-title');
 		$slider = replaceItems($slider, ['filename' => $file], '%');

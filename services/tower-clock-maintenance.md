@@ -1,10 +1,12 @@
 <!--//meta
 
+Custom Title: WE PROVIDE RESTORATION AND MAINTENANCE SERVICE ANY WHERE IN INDIA | %siteName%
+
 Description: We offer a wide range of tower clock products, including bespoke options, for churches, schools, and commercial buildings. Our services include professional installation and ongoing maintenance.
 
-Primary Keyword: tower clock products
+Primary Keyword: tower clock maintenance
 
-Related Keywords: tower clocksarchitectural clockscustom tower clockslarge tower clocksoutdoor tower clockschurch tower clockspublic clockstower clock designtower clock installationtower clock servicesclock towers
+Related Keywords: tower clocks, architectural clocks, custom tower clocks, large tower clocks, outdoor tower clocks, church tower clocks, public clocks, tower clock design, tower clock installation, tower clock services, clock towers
 
 Long-Tail Keywords: best tower clock products for churches, custom tower clock products for schools, large outdoor tower clock products installation services, affordable tower clock products for commercial building, shigh-quality architectural tower clock products for sale, where to buy tower clock products for churches and schools, tower clock products with long-lasting durability, digital tower clock products for public spaces and businesses, historic tower clock products restoration and maintenance, energy-efficient tower clock products for sale
 
