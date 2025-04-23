@@ -2,9 +2,13 @@
 //runFeature done in ./index.php
 
 $raw = '
-## Welcome to PCI Clocks
+# Welcome to PCI Clocks
+%contact-snippet%
 
-### Tell us if you
+---
+%engage-note-above%
+
+## Tell us if you
 
 * Are an existing Customer.
 * Want a site visit.
@@ -13,12 +17,13 @@ $raw = '
 
 ---
 
-### How should we proceed?
+## How should we proceed?
 
 * Call back (contact through whatsapp)
 * Email you (contact through email)
 * Any remarks<!--large-->
 
+%engage-note%
 ';
 
 return _renderEngage('request-a-callback', $raw, true, false);
