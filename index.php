@@ -54,8 +54,11 @@ function after_file() {
 function after_footer_assets() {
 	$node = variable('node');
 	if ($node == 'index') {
-		echo getThemeSnippet('rs-plugin-footer');
+		echo replaceItems(getThemeSnippet('rs-plugin-footer'), [
+			'delay:9000' => 'delay:2000',
+		]);
 	}
+	echo getThemeSnippet('floating-button');
 }
 
 function enrichThemeVars($vars, $what) {

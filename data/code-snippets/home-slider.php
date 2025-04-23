@@ -156,14 +156,15 @@ Cost range- from Rs 1,50,000/- onwards.<br>
 
 	];
 
+$ver = '?fver=1';
 $block = getThemeBlock('rev-slider', SITEPATH . '/data/');
 
 $op = [];
 $op[] = $block['start'];
 
 foreach ($items as $item) {
-	$item['image'] = fileUrl($item['image']);
-	$item['thumbnail'] = fileUrl($item['thumbnail']);
+	$item['image'] = fileUrl($item['image']) . $ver;
+	$item['thumbnail'] = fileUrl($item['thumbnail']) . $ver;
 
 	$item['content'] = returnLinesNoParas($item['content']);
 

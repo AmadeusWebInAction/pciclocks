@@ -1,9 +1,9 @@
 :root {
-	
 	--cnvs-body-bg: #dfeeef;
 	--no-slider-background: #0F2657;
 	--footer-widgets-link: #333;
 	--cnvs-font-size-body: 1.15rem;
+	--cnvs-floating-btn-box-width: 80vw;
 }
 
 body.no-slider #header:not(.not-dark), body.no-slider #header #header-wrap:not(.not-dark)
@@ -14,3 +14,5 @@ body.no-slider #header:not(.not-dark), body.no-slider #header #header-wrap:not(.
 
 #header { --cnvs-primary-menu-color: cyan; }
 #header .sub-menu-container { --cnvs-primary-menu-color: rgb(231, 86, 29); }
+
+.device-up-md { --cnvs-floating-btn-box-width: 700px; }
