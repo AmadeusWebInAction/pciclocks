@@ -30,6 +30,7 @@ variables([
 
 function site_before_render() {
 	addStyle('site');
+	runFeature('engage'); //needed for floating button
 
 	variable('og:image', fileUrl('assets/pciclocks-opengraph.jpg'));
 	$node = variable('node');
@@ -58,7 +59,7 @@ function after_footer_assets() {
 			'delay:9000' => 'delay:2000',
 		]);
 	}
-	echo getThemeSnippet('floating-button');
+	//echo getThemeSnippet('floating-button');
 }
 
 function enrichThemeVars($vars, $what) {
