@@ -35,6 +35,7 @@ function site_before_render() {
 	$node = variable('node');
 	if ($node == 'index') setSubTheme('stunning');
 	if ($node == 'index') {
+		variable('custom-title', 'Best Manufacturer under MSME | GPS based Outdoor Clocks. Precision Clocks & Industries[PCI Clocks] Company under MSME Certified. Starting cost range from - Rs 1,20,000');
 		variables([
 			'description' => variable('defaultSeoDescription'),
 			'keywords' => variable('defaultSeoKeywords'),

@@ -1,3 +1,18 @@
 :root {
+	
 	--cnvs-body-bg: #dfeeef;
+	--no-slider-background: #0F2657;
+	--footer-widgets-link: #333;
+	--cnvs-font-size-body: 1.15rem;
 }
+
+body.no-slider #header:not(.not-dark), body.no-slider #header #header-wrap:not(.not-dark)
+	{ background-color: var(--no-slider-background); }
+
+#header .menu-link:not(.device-up-xs .menu-link) { --cnvs-primary-menu-color: #fff; }
+.menu-container *, .breadcrumb { font-size: 110%!important; line-height: 1.10; }
+
+#header { --cnvs-primary-menu-color: cyan; }
+#header .sub-menu-container { --cnvs-primary-menu-color: rgb(231, 86, 29); }
+.menu-item .sub-menu-trigger { color: var(--cnvs-primary-menu-color); }
+.primary-menu-trigger { background-color: var(--cnvs-primary-menu-color); }

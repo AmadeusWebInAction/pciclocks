@@ -7,7 +7,7 @@ GET QUOTAIION
 $blocks = [
 	'home-about' => 'snippet',
 	'works' => [
-		'start' => ['introduction' => 'With a commitment to craftsmanship, we deliver reliable and elegant timepieces for communities and institutions worldwide.'],
+		'start' => ['introduction' => getSnippet('clock-widget') . 'With a commitment to craftsmanship, we deliver reliable and elegant timepieces for communities and institutions worldwide.'],
 		'end' => ['morelink' => pageUrl('catalogue')],
 		'items' => [
 			getWorkItem('Tower Clocks'),
