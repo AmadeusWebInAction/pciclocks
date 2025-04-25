@@ -1,6 +1,6 @@
 <?php
 $fol = 'engineering/';
-$link = pageUrl('make-an-enquiry');
+$link = pageUrl('enquiry');
 $linkText = 'Get More Details';
 
 if (variable('node') == 'design') {

@@ -87,7 +87,7 @@ function enrichThemeVars($vars, $what) {
 		$vars['breadcrumbs'] = getBreadcrumbs([
 			'%url%' => 'Home',
 			'%url%catalogue/' => 'Catalogue',
-			'%url%make-an-enquiry/' => 'Make an Enquiry',
+			'%url%enquiry/' => 'Enquiry',
 		]);
 	}
 	return $vars;
